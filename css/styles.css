@@ -8,6 +8,8 @@
   --footer-mail-tel-color: #ffffff99;
   --hero-color: #ffffff;
   --second-background-color: #f5f4fa;
+  --footer-text-color: #ffffff;
+  --main-logo-color: #afb1b8;
 }
 
 body {
@@ -37,12 +39,14 @@ img {
 .link {
   text-decoration: none;
 }
+
 .list {
   margin: 0;
   padding: 0;
 
   list-style: none;
 }
+
 .section-title {
   margin: 0px;
 
@@ -64,12 +68,14 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
 .container {
   width: 1200px;
 
   padding: 0 15px;
   margin: 0 auto;
 }
+
 .section {
   padding: 94px 0px;
 }
@@ -209,7 +215,7 @@ img {
   margin: 0px 250px;
 }
 .head-button {
-  color: #ffffff;
+  color: var(--hero-color);
   background-color: var(--main-color);
   border: var(--main-color);
 
@@ -223,10 +229,12 @@ img {
   margin-top: 30px;
   padding: 10px 32px;
 }
+
 .head-button:hover,
 .head-button:focus {
   background-color: var(--hover-color);
 }
+
 .head-button:active {
   background-color: var(--main-color);
 }
@@ -247,6 +255,7 @@ img {
 
 .about-svg-bg {
   background-color: var(--second-background-color);
+
   padding: 25px 100px;
   border-radius: 4px;
 }
@@ -311,10 +320,11 @@ img {
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+
   background-color: var(--hero-color);
 }
 
-.teammate-card-bottom {
+.teammate-card-thumb {
   padding: 30px 32px;
 }
 
@@ -383,11 +393,11 @@ img {
   width: 170px;
   height: 92px;
 
-  color: #afb1b8;
+  color: var(--main-logo-color);
 
   padding: 16px 32px;
   border-radius: 4px;
-  border: #afb1b8 solid 1px;
+  border: var(--main-logo-color) solid 1px;
 }
 
 .client-link:hover,
@@ -398,6 +408,7 @@ img {
 
 .clients-svg {
   fill: currentColor;
+
   width: 106px;
   height: 60px;
 }
@@ -458,6 +469,7 @@ img {
 .portfolio-post {
   width: 370px;
   flex-basis: calc(100% / 3 -30px);
+
   margin-right: 30px;
   margin-bottom: 30px;
 }
@@ -509,7 +521,7 @@ img {
   font-size: 26px;
   line-height: 1.19;
 
-  color: #ffffff;
+  color: var(--footer-text-color);
 }
 
 .cont-adress {
@@ -522,7 +534,7 @@ img {
   font-style: normal;
   line-height: 1.71;
 
-  color: #ffffff;
+  color: var(--footer-text-color);
 }
 
 .cont-link-li {
@@ -544,7 +556,7 @@ img {
 
 .footer-h2-social-list {
   margin: 0;
-  color: #ffffff;
+  color: var(--footer-text-color);
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
@@ -565,8 +577,10 @@ img {
 
 .footer-social-bg {
   background-color: #ffffff10;
+
   display: flex;
   align-items: center;
+
   padding: 12px 12px;
   border-radius: 50%;
 }
@@ -579,5 +593,6 @@ img {
 .footer-social-logo {
   width: 20px;
   height: 20px;
+
   fill: #ffffff;
 }
